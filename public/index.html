@@ -18,7 +18,7 @@
         <nav class="navbar">
             <div class="container-fluid">
               <div class="navbar-header">
-                <b class="navbar-brand" href="#">NoJOB</b>
+                  <img class="logo" src="/static/images/logo.png" alt="">
               </div>
             </div>
           </nav>
@@ -56,17 +56,51 @@
                     </div>
                 </div>
           </div>
+
+          <!-- Loading Block  -->
+
+          <div class="container" id="connecting" style="display: none;">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3 text-center">
+                        <b id="livecount">Connecting to a random stanger...</b>
+                    </div>
+                    <div class="col-md-4 col-md-offset-2 text-center">
+                        <span class="livedot"></span>
+                        <b id="livecount">Live - 127</b>
+                    </div>
+                </div><br><br><br>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <b>YOU</b>
+                        <img src="/static/images/user.png" alt=""> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <img src="/static/images/user.png" class="animate-flicker" alt="">
+                        <b style="color: red;">RANDOM</b>
+                    </div>
+                </div>
+          </div>
+
           <!-- chat block  -->
           <div class="container" id="chatblock" style="display: none;">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-8 text-center">
-                    <span class="livedot"></span>
-                    <b id="livecount">Live - 127</b>
-                </div>
-            </div>
             <div class="container">
-                <p>*Note - Everything will be lost once you disconnect</p>
-
+                <div class="row">
+                    <div class="col-md-8 well" id="chatwindow">
+                            <div id="actualchat">
+                                    <p class="text-center"><strong>You are now chatting with a stranger!</strong></p>
+                                    <p class="you"><b>You : </b>Test chat</p>
+                                    <p class="stranger"><b>Strange : </b>Strange Reply</p>
+                                    <p class="you"><b>You : </b>Test chat</p>
+                                    <p class="stranger"><b>Strange : </b>Strange Reply</p>
+                                    <p class="you"><b>You : </b>Test chat</p>
+                            </div>
+                            <div style="margin-top: 5px; ">
+                                <input type="text" placeholder="Your Message" style="width: 80%;">
+                                <button class="btn btn-primary" style="left:80%; position: absolute;">Send</button>
+                            </div>
+                    </div>
+                    <div class="col-md-3 well" id="features">
+                        <button class="btn btn-danger" style="width: 100%;">Disconnect</button>
+                    </div>
+                </div>
             </div>
           </div>
     </div>

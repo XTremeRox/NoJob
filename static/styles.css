@@ -10,9 +10,12 @@ body{
     background-color: black;
 }
 
-.navbar-brand{
-    color: white;
-    font-size: 25px;
+.navbar-brand > img {
+    /* color: white;
+    font-size: 25px; */
+}
+.logo {
+    display: block;
 }
 
 #tncblock{
@@ -39,3 +42,54 @@ body{
 .livecount{
     /* line-height: 25px; */
 }
+
+.well{
+    color: black;
+}
+
+#actualchat{
+    background-color:white;
+    height:95%;
+    padding: 20px;
+    overflow: scroll;
+}
+
+#features{
+    margin-left:10px; 
+}
+
+.you{
+    color: blue;
+}
+
+.stranger{
+    color:red;
+}
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation 1s infinite;
+     -moz-animation: flickerAnimation 1s infinite;
+     -o-animation: flickerAnimation 1s infinite;
+      animation: flickerAnimation 1s infinite;
+  }

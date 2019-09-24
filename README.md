@@ -7,6 +7,7 @@ Chat roulette in p2p made to work in a restricted network. Uses raw WebRTC APIs 
 I recently noticed that my 4 years in college is about to end, and I wasn't the only person who loves sitting in room on campus! Why not make something for it :) Here it is
 
 ## Usage-Server
+First **npm install** obviously.
 Plugin self signed SSL certificates to **invalid_certs** folder in root directory, *port forward* incoming connections to port 443 run
  `node server.js`
  You are good to go!

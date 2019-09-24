@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NoJOB | Official</title>
+    <!-- Some sexy fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <b class="navbar-brand" href="#">NoJOB</b>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Terms and conditions block -->
+
+          <div class="container" id="tncblock">
+            <h3>Terms and Conditions:- </h3>
+            <ul class="list-group" id="tnc">
+                <li class="list-group-item">1. All users are obliged to observe these Terms and Conditions.</li>
+                <li class="list-group-item">2. Please be kind, supportive and respectful to every participant of the chat at all times.</li>
+                <li class="list-group-item">3. Please do not use language that is graphic, inappropriate, flirtatious or sexually suggestive.
+                    Additionally, refrain from sharing links of this nature.</li>
+                <li class="list-group-item">4. Please refrain from sharing personal contact details or social media on NoJob.</li>
+                <li class="list-group-item">5. It is recommended not to share the name of any Listener, Member or Guest that you have had a 
+                    one-on-one chat with, or any details from these chats.</li>
+                <li class="list-group-item">6. Please refrain from initiating or participating in spreading rumors.</li>
+                <li class="list-group-item">7. Some people online are dangerous. They may not necessarily be who you think they are.</li>
+                <li class="list-group-item">8. We strongly advise you never to initiate a one-on-one meeting with anyone you chat to on 
+                    the internet. If you HAVE to meet someone, ensure their identity using any other social platform that it is in a public place and an adult 
+                    or friend you trust is with you. </li>
+                <li class="list-group-item">9. Do not open any website links given to you - they could contain spyware, viruses or 
+                    disturbing material. </li>
+                <li class="list-group-item">10. It is worth remembering that NoJob reserves the right to deny access at any time 
+                    to any user. If we feel that someone is suspicious and may pose a threat to our users, 
+                    we will not permit them to use our service. Also, in no way does NoJob store sessions or user data.</li>
+                <li class="list-group-item">11. If you have any concerns, ignore/skip the user. This is the golden rule of chatting.</li>
+                </ul>
+                <input type="checkbox" id="tncaccept" />
+                <label for="tncaccept">I accept the Terms and Conditions</label>
+                <div id="confwarn"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-primary" id="tncbutton">Next</button>
+                    </div>
+                </div>
+          </div>
+          <!-- chat block  -->
+          <div class="container" id="chatblock" style="display: none;">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-8 text-center">
+                    <span class="livedot"></span>
+                    <b id="livecount">Live - 127</b>
+                </div>
+            </div>
+            <div class="container">
+                <p>*Note - Everything will be lost once you disconnect</p>
+
+            </div>
+          </div>
+    </div>
+</body>
+<script src="/static/jquery/jquery.min.js" crossorigin="anonymous"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/static/scripts.js"></script>
+</html>

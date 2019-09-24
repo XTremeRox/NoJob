@@ -1,0 +1,24 @@
+{
+  "name": "nojob",
+  "version": "0.0.1",
+  "description": "WebRTC based local network peer to peer chat with voice call support",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XTremeRox/NoJob.git"
+  },
+  "author": "xtremerox (https://github.com/xtremerox)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XTremeRox/NoJob/issues"
+  },
+  "homepage": "https://github.com/XTremeRox/NoJob#readme",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "uuid": "*"
+  }
+}
